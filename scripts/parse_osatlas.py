@@ -312,68 +312,6 @@ per_dataset_summary = defaultdict(lambda: {
     "warnings_count": 0
 })
 
-# def main():
-#     steps, dataset_configs = parse_all_datasets(CONFIG_PATH)
-
-#     # Determine the majority domain (based on config)
-#     domain_counter = defaultdict(int)
-#     domain_map = {}  # dataset_name → domain
-
-#     for ds in dataset_configs:
-#         domain_map[ds["name"]] = ds["domain"]
-        
-
-#     # Group steps by domain
-#     domain_to_steps = defaultdict(list)
-#     for step in steps:
-#         dataset_name = step.image_path.split("/")[0]  # e.g., 'linux'
-#         domain = domain_map.get(dataset_name, "web")
-#         domain_to_steps[domain].append(step)
-
-#     trajectories = []
-#     for domain, steps in domain_to_steps.items():
-#         traj = Trajectory(
-#             data_source="os-atlas",
-#             is_navigation=False,
-#             domain=domain,
-#             steps=steps
-#         )
-#         trajectories.append(traj.model_dump())                            
-#         output_path = f"outputs/osatlas_parsed_{domain}.json"
-#         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-#         with open(output_path, "w") as f:
-#             f.write(traj.model_dump_json(indent=2))
-#         print(f"✅ Saved trajectory for domain '{domain}' to {output_path}")
-
-#     generate_grouped_output(steps, "parsed_output_grouped.json")
-
-#     with open(SUMMARY_PATH, "w") as f:
-#         json.dump(summary, f, indent=2)
-
-#     print("\n📊 Per-Dataset Summary:")
-#     for dataset, stats in per_dataset_summary.items():
-#         total = stats["parsed"] + stats["skipped"]
-#         parsed_pct = (stats["parsed"] / total) * 100 if total > 0 else 0
-#         skipped_pct = (stats["skipped"] / total) * 100 if total > 0 else 0
-#         warnings = stats["warnings_count"]
-#         print(f"  {dataset}: Parsed = {stats['parsed']} / {total} ({parsed_pct:.2f}%) | Skipped = {stats['skipped']} ({skipped_pct:.2f}%) | Warnings = {warnings}")
-
-#     formatted_failure_reasons = {
-#         dataset: {
-#             f"{err_type}: {err_msg}": count
-#             for (err_type, err_msg), count in reasons.items()
-#         }
-#         for dataset, reasons in failure_reasons_counter.items()
-#     }
-
-#     with open("logs/failure_summary_log.json", "w") as f:
-#         json.dump(formatted_failure_reasons, f, indent=2)
-
-#     print("✅ OS Atlas parsing complete.")
-#     print(f"Parsed steps: {summary['parsed_successfully']} / {summary['total_samples']}")
-#     print(f"Warnings: {summary['warnings_count']} | Skipped: {summary['skipped_count']}")
-
-
 def main():
     steps, dataset_configs = parse_all_datasets(CONFIG_PATH)
 
@@ -419,7 +357,7 @@ def main():
         json.dump(summary, f, indent=2)
 
     # Print per-dataset stats
-    print("\n📊 Per-Dataset Summary:")
+    print("\nPer-Dataset Summary:")
     for dataset, stats in per_dataset_summary.items():
         total = stats["parsed"] + stats["skipped"]
         parsed_pct = (stats["parsed"] / total) * 100 if total > 0 else 0

@@ -223,7 +223,7 @@ def parse_all_datasets(config_yaml):
         }
 
     # # Pretty print summary
-    # print("\n📊 Per-Dataset Summary:")
+    # print("\nPer-Dataset Summary:")
     # for ds, stats in summary["datasets"].items():
     #     print(
     #         f"  {ds}: Parsed = {stats['parsed']} / {stats['total']} "
@@ -239,113 +239,6 @@ def parse_all_datasets(config_yaml):
     return all_steps, config["datasets"]
 
 
-
-
-# def generate_grouped_output(all_parsed_steps, output_path):
-#     grouped_by_image = defaultdict(list)
-#     for step in all_parsed_steps:
-#         grouped_by_image[step.image_path].append(step)
-
-#     merged_steps = []
-#     for image_path, steps in grouped_by_image.items():
-#         all_elements = []
-#         for step in steps:
-#             all_elements.extend(step.all_ui_elements)
-
-#         # Deduplicate elements
-#         seen = set()
-#         unique_elements = []
-#         for el in all_elements:
-#             key = (
-#                 el.bbox.left, el.bbox.top,
-#                 el.bbox.right, el.bbox.bottom,
-#                 el.element_type
-#             )
-#             if key not in seen:
-#                 seen.add(key)
-#                 unique_elements.append(el)
-
-#         merged_steps.append({
-#             "image_path": image_path,
-#             "image_width": steps[0].image_width,
-#             "image_height": steps[0].image_height,
-#             "all_ui_elements": [el.model_dump() for el in unique_elements],
-#             "conversation_list": [],
-#             "annotation_parts": len(steps),  # completeness
-#         })
-        
-#         if wrap_as_trajectory:
-#             traj = Trajectory(
-#                 data_source="os-atlas",
-#                 is_navigation=False,
-#                 domain=domain,
-#                 steps=[InteractionStep(**step) for step in merged_steps]  # or use parsed steps directly
-#             )
-#             with open(output_path, "w") as f:
-#                 f.write(traj.model_dump_json(indent=2))
-#         else:
-#             with open(output_path, "w") as f:
-#                 json.dump(merged_steps, f, indent=2)
-
-
-#     output_path = Path(output_path)
-#     output_path.parent.mkdir(parents=True, exist_ok=True)
-#     with open(output_path, "w") as f:
-#         json.dump(merged_steps, f, indent=2)
-
-#     print(f"✅ Grouped output saved to {output_path}")
-
-
-# def generate_grouped_output(all_parsed_steps, output_path, wrap_as_trajectory=False, domain="web"):
-#     grouped_by_image = defaultdict(list)
-#     for step in all_parsed_steps:
-#         grouped_by_image[step.image_path].append(step)
-
-#     merged_steps = []
-#     for image_path, steps in grouped_by_image.items():
-#         all_elements = []
-#         for step in steps:
-#             all_elements.extend(step.all_ui_elements)
-
-#         # Deduplicate elements
-#         seen = set()
-#         unique_elements = []
-#         for el in all_elements:
-#             key = (
-#                 el.bbox.left, el.bbox.top,
-#                 el.bbox.right, el.bbox.bottom,
-#                 el.element_type
-#             )
-#             if key not in seen:
-#                 seen.add(key)
-#                 unique_elements.append(el)
-
-#         merged_steps.append(InteractionStep(
-#             image_path=image_path,
-#             image_width=steps[0].image_width,
-#             image_height=steps[0].image_height,
-#             all_ui_elements=unique_elements,
-#             conversation_list=[],
-#         ))
-
-#     output_path = Path(output_path)
-#     output_path.parent.mkdir(parents=True, exist_ok=True)
-
-#     if wrap_as_trajectory:
-#         traj = Trajectory(
-#             data_source="os-atlas",
-#             is_navigation=False,
-#             domain=domain,
-#             steps=merged_steps
-#         )
-#         with open(output_path, "w") as f:
-#             f.write(traj.model_dump_json(indent=2))
-#     else:
-#         # If not wrapping, serialize as list of dicts
-#         with open(output_path, "w") as f:
-#             json.dump([step.model_dump() for step in merged_steps], f, indent=2)
-
-#     print(f"✅ Grouped output saved to {output_path}")
 
 def generate_grouped_output(domain_to_steps, output_path):
     from schema import Trajectory
@@ -399,7 +292,7 @@ def generate_grouped_output(domain_to_steps, output_path):
     with open(output_path, "w") as f:
         json.dump(trajectory_list, f, indent=2)
 
-    print(f"✅ Grouped Trajectory list saved to {output_path}")
+    print(f"Grouped Trajectory list saved to {output_path}")
 
 
 
@@ -419,67 +312,6 @@ per_dataset_summary = defaultdict(lambda: {
     "skipped": 0,
     "warnings_count": 0
 })
-
-# def main():
-#     steps, dataset_configs = parse_all_datasets(CONFIG_PATH)
-
-#     # Determine the majority domain (based on config)
-#     domain_counter = defaultdict(int)
-#     domain_map = {}  # dataset_name → domain
-
-#     for ds in dataset_configs:
-#         domain_map[ds["name"]] = ds["domain"]
-        
-
-#     # Group steps by domain
-#     domain_to_steps = defaultdict(list)
-#     for step in steps:
-#         dataset_name = step.image_path.split("/")[0]  # e.g., 'linux'
-#         domain = domain_map.get(dataset_name, "web")
-#         domain_to_steps[domain].append(step)
-
-#     trajectories = []
-#     for domain, steps in domain_to_steps.items():
-#         traj = Trajectory(
-#             data_source="os-atlas",
-#             is_navigation=False,
-#             domain=domain,
-#             steps=steps
-#         )
-#         trajectories.append(traj.model_dump())                            
-#         output_path = f"outputs/osatlas_parsed_{domain}.json"
-#         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-#         with open(output_path, "w") as f:
-#             f.write(traj.model_dump_json(indent=2))
-#         print(f"✅ Saved trajectory for domain '{domain}' to {output_path}")
-
-#     generate_grouped_output(steps, "parsed_output_grouped.json")
-
-#     with open(SUMMARY_PATH, "w") as f:
-#         json.dump(summary, f, indent=2)
-
-#     print("\n📊 Per-Dataset Summary:")
-#     for dataset, stats in per_dataset_summary.items():
-#         total = stats["parsed"] + stats["skipped"]
-#         parsed_pct = (stats["parsed"] / total) * 100 if total > 0 else 0
-#         skipped_pct = (stats["skipped"] / total) * 100 if total > 0 else 0
-#         warnings = stats["warnings_count"]
-#         print(f"  {dataset}: Parsed = {stats['parsed']} / {total} ({parsed_pct:.2f}%) | Skipped = {stats['skipped']} ({skipped_pct:.2f}%) | Warnings = {warnings}")
-
-#     formatted_failure_reasons = {
-#         dataset: {
-#             f"{err_type}: {err_msg}": count
-#             for (err_type, err_msg), count in reasons.items()
-#         }
-#         for dataset, reasons in failure_reasons_counter.items()
-#     }
-
-#     with open("logs/failure_summary_log.json", "w") as f:
-#         json.dump(formatted_failure_reasons, f, indent=2)
-
-#     print("✅ OS Atlas parsing complete.")
-#     print(f"Parsed steps: {summary['parsed_successfully']} / {summary['total_samples']}")
-#     print(f"Warnings: {summary['warnings_count']} | Skipped: {summary['skipped_count']}")
 
 
 def main():
@@ -511,7 +343,7 @@ def main():
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             f.write(traj.model_dump_json(indent=2))
-        print(f"✅ Saved trajectory for domain '{domain}' to {output_path}")
+        print(f"Saved trajectory for domain '{domain}' to {output_path}")
 
     # Save unified trajectory file (list of trajectories)
     unified_path = f"{OUTPUT_PATH}/osatlas_parsed_unified.json"
@@ -556,7 +388,7 @@ def main():
     with open("logs/failure_summary_log.json", "w") as f:
         json.dump(normalized_failure_reasons, f, indent=2)
 
-    print("✅ OS Atlas parsing complete.")
+    print("OS Atlas parsing complete.")
     print(f"Parsed steps: {summary['parsed_successfully']} / {summary['total_samples']}")
     print(f"Warnings: {summary['warnings_count']} | Skipped: {summary['skipped_count']}")
 
