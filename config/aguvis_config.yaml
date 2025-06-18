@@ -11,5 +11,19 @@ datasets:
     domain: web
     json_path: data/aguvis_stage1/webui350k/webui350k.json
     images_folder: data/aguvis_stage1/webui350k/images
-
-
+  - name: recoig16k
+    domain: web
+    json_path: data/aguvis_stage1/recoig16k/recoig16k.json
+    images_folder: data/aguvis_stage1/recoig16k/images
+  - name: widget_captioning
+    domain: web
+    json_path: data/aguvis_stage1/widget_captioning/widget_captioning.json
+    images_folder: data/aguvis_stage1/widget_captioning/images
+  - name: uirefexp
+    domain: web
+    json_path: data/aguvis_stage1/uirefexp/uirefexp.json
+    images_folder: data/aguvis_stage1/uirefexp/images
+  - name: ricosca
+    domain: web
+    json_path: data/aguvis_stage1/ricosca/ricosca.json
+    images_folder: data/aguvis_stage1/ricosca/images
