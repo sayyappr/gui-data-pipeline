@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.5509259259259259, 0.6725, 1.2203703703703703, 0.695]
+[**Image**]: c3e1731f-8d43-4b42-98ce-43e5214043fd
+[**Instruction**]: Listen to sleep sounds
+[**Normalized BBox**]: [0.5509259259259259, 0.6725, 1.2203703703703703, 0.695]

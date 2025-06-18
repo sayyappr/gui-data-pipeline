@@ -1,0 +1,40 @@
+All UI elements failed validation.
+
+Image file: d7391bbe-4931-4212-a04f-2cd80e596148.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "Current date",
+    "bbox": [
+      1.2944444444444445,
+      0.3254166666666667,
+      1.412037037037037,
+      0.36916666666666664
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.2944444444444445, 0.3254166666666667, 1.412037037037037, 0.36916666666666664]"
+  },
+  {
+    "index": 1,
+    "instruction": "Start new line below",
+    "bbox": [
+      1.412037037037037,
+      0.3254166666666667,
+      1.5296296296296297,
+      0.36916666666666664
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.412037037037037, 0.3254166666666667, 1.5296296296296297, 0.36916666666666664]"
+  },
+  {
+    "index": 2,
+    "instruction": "Insert snippet",
+    "bbox": [
+      1.7648148148148148,
+      0.3254166666666667,
+      1.8824074074074073,
+      0.36916666666666664
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.7648148148148148, 0.3254166666666667, 1.8824074074074073, 0.36916666666666664]"
+  }
+]

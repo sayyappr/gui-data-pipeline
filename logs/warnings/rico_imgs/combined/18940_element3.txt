@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=218, top=384, right=490, bottom=384
+[**Image**]: 18940
+[**Instruction**]: choose the item to the right of pittsburgh pirates item
+[**Normalized BBox**]: [0.4034722149372101, 0.39960938692092896, 0.9069444537162781, 0.4000000059604645]

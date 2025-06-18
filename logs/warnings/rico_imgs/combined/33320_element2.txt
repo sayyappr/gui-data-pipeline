@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=658, top=362, right=1045, bottom=362
+[**Image**]: 33320
+[**Instruction**]: launch the item above honana bx 949
+[**Normalized BBox**]: [0.6097221970558167, 0.18828125298023224, 0.9680555462837219, 0.18867187201976776]

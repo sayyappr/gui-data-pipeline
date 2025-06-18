@@ -1,0 +1,1 @@
+[Image Error] [Errno 21] Is a directory: 'data/desktop_domain/macos_images/20240905_135256_screenshot_sub1.png'

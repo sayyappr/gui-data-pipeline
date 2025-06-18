@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.7734375, 0.9944444444444445, 0.786328125, 1.0173611111111112]
+[**Image**]: output_20240912_154136_original_screenshot
+[**Instruction**]: Click to watch item - Size 12 - Jordan Luka 2 Luk.AI - DX8733-001
+[**Normalized BBox**]: [0.7734375, 0.9944444444444445, 0.786328125, 1.0173611111111112]

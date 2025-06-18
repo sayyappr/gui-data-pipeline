@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=2069, top=391, right=2069, bottom=391
+[**Image**]: output_20240912_145732_original_screenshot
+[**Instruction**]: A48-TrendArrow-Orange-TwoDirections
+[**Normalized BBox**]: [0.808203125, 0.27152777777777776, 0.808203125, 0.27152777777777776]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=200, right=540, bottom=200
+[**Image**]: 36020
+[**Instruction**]: select icon above native language item
+[**Normalized BBox**]: [0.0, 0.20781250298023224, 1.0, 0.20820312201976776]

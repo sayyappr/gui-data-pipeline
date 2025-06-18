@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.4, 0.9638888888888889, 0.505078125, 1.0583333333333333]
+[**Image**]: output_20240912_153808_original_screenshot
+[**Instruction**]: POWMEE P10 Kids Headphones with Microphone Stereo Headphones for Children Boys Girls,Adjustable 85dB/94dB Volume Control Foldable On-Ear Headphone with Microphone for School/PC/Cellphone(Green)
+[**Normalized BBox**]: [0.4, 0.9638888888888889, 0.505078125, 1.0583333333333333]

@@ -1,0 +1,62 @@
+All UI elements failed validation.
+
+Image file: c3cedc26-b43e-4ad3-b462-165a8d17f58c.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "Google Assistant greeting container.",
+    "bbox": [
+      0.0,
+      1.5745833333333332,
+      1.0,
+      1.895
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.0, 1.5745833333333332, 1.0, 1.895]"
+  },
+  {
+    "index": 1,
+    "instruction": "Click to talk with Google Assistant.",
+    "bbox": [
+      0.40185185185185185,
+      1.90375,
+      0.5962962962962963,
+      1.965
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.40185185185185185, 1.90375, 0.5962962962962963, 1.965]"
+  },
+  {
+    "index": 2,
+    "instruction": "Google Assistant greeting.",
+    "bbox": [
+      0.0,
+      1.6533333333333333,
+      1.0,
+      1.895
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.0, 1.6533333333333333, 1.0, 1.895]"
+  },
+  {
+    "index": 3,
+    "instruction": "Try saying",
+    "bbox": [
+      0.33240740740740743,
+      1.6620833333333334,
+      0.6675925925925926,
+      1.70875
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.33240740740740743, 1.6620833333333334, 0.6675925925925926, 1.70875]"
+  },
+  {
+    "index": 4,
+    "instruction": "\u201cWhat\u2019s the weather tomorrow?\u201d",
+    "bbox": [
+      0.058333333333333334,
+      1.7308333333333332,
+      0.9416666666666667,
+      1.8241666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.058333333333333334, 1.7308333333333332, 0.9416666666666667, 1.8241666666666667]"
+  }
+]

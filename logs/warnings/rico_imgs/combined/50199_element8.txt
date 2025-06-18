@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=283, top=289, right=535, bottom=289
+[**Image**]: 50199
+[**Instruction**]: tap the item below view in browser
+[**Normalized BBox**]: [0.5236111283302307, 0.30078125, 0.9902777671813965, 0.30156248807907104]

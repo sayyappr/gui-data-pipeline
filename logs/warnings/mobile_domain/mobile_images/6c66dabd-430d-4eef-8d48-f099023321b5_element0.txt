@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.175, 0.16708333333333333, 1.0194444444444444, 0.21958333333333332]
+[**Image**]: 6c66dabd-430d-4eef-8d48-f099023321b5
+[**Instruction**]: Couldn't sign in
+[**Normalized BBox**]: [0.175, 0.16708333333333333, 1.0194444444444444, 0.21958333333333332]

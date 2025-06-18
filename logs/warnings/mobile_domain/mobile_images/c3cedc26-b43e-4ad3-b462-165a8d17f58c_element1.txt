@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.40185185185185185, 1.90375, 0.5962962962962963, 1.965]
+[**Image**]: c3cedc26-b43e-4ad3-b462-165a8d17f58c
+[**Instruction**]: Click to talk with Google Assistant.
+[**Normalized BBox**]: [0.40185185185185185, 1.90375, 0.5962962962962963, 1.965]

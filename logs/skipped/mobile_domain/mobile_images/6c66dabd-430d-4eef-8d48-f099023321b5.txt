@@ -1,0 +1,29 @@
+All UI elements failed validation.
+
+Image file: 6c66dabd-430d-4eef-8d48-f099023321b5.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "Couldn't sign in",
+    "bbox": [
+      0.175,
+      0.16708333333333333,
+      1.0194444444444444,
+      0.21958333333333332
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.175, 0.16708333333333333, 1.0194444444444444, 0.21958333333333332]"
+  },
+  {
+    "index": 1,
+    "instruction": "There was a problem communicating with Google servers. \n\nTry again later.",
+    "bbox": [
+      0.175,
+      0.24583333333333332,
+      1.0194444444444444,
+      0.35583333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.175, 0.24583333333333332, 1.0194444444444444, 0.35583333333333333]"
+  }
+]

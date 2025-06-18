@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.1284722222222222, 0.9855555555555555, 0.1673611111111111, 1.0033333333333334]
+[**Image**]: 20240904_182241_screenshot
+[**Instruction**]: Stickies
+[**Normalized BBox**]: [0.1284722222222222, 0.9855555555555555, 0.1673611111111111, 1.0033333333333334]

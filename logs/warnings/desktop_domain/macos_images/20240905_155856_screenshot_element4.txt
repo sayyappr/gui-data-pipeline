@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.25277777777777777, 0.9922222222222222, 0.475, 1.031111111111111]
+[**Image**]: 20240905_155856_screenshot
+[**Instruction**]: . I understand that I can revoke these consents at any time in
+[**Normalized BBox**]: [0.25277777777777777, 0.9922222222222222, 0.475, 1.031111111111111]

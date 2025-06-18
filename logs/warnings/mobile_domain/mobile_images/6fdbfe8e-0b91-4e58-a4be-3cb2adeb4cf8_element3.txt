@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.11458333333333333, 1.0037037037037038, 0.9745833333333334]
+[**Image**]: 6fdbfe8e-0b91-4e58-a4be-3cb2adeb4cf8
+[**Instruction**]: www.google.com
+[**Normalized BBox**]: [0.0, 0.11458333333333333, 1.0037037037037038, 0.9745833333333334]

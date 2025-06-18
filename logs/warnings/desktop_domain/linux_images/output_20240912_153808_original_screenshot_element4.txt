@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.516796875, 0.9409722222222222, 0.653515625, 1.0520833333333333]
+[**Image**]: output_20240912_153808_original_screenshot
+[**Instruction**]: 2024 New 45W USB-C Samsung Super Fast Charger PD3.0 [2 Pack] with 6FT Type C Charging Cable Cord for Samsung Galaxy S23 Ultra/S23/S23+/S24/S24+/S24Ultra/S22+/S22 Ultra/Galaxy Tab PPS Wall Charger3.0
+[**Normalized BBox**]: [0.516796875, 0.9409722222222222, 0.653515625, 1.0520833333333333]

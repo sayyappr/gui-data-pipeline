@@ -1,0 +1,6 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.175, 0.24583333333333332, 1.0194444444444444, 0.35583333333333333]
+[**Image**]: 6c66dabd-430d-4eef-8d48-f099023321b5
+[**Instruction**]: There was a problem communicating with Google servers. 
+
+Try again later.
+[**Normalized BBox**]: [0.175, 0.24583333333333332, 1.0194444444444444, 0.35583333333333333]

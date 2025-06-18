@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.9305555555555556, 0.06708333333333333]
+[**Image**]: 15d77385-a16e-4b01-8b4b-00009ae9ccd0
+[**Instruction**]: file_N76U
+[**Normalized BBox**]: [0.1574074074074074, 0.0375, 1.9305555555555556, 0.06708333333333333]

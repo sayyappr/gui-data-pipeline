@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=559, right=540, bottom=559
+[**Image**]: 36020
+[**Instruction**]: turn off the item below language level icon
+[**Normalized BBox**]: [0.0, 0.5824218988418579, 1.0, 0.582812488079071]

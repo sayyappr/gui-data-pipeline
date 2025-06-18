@@ -1,0 +1,15 @@
+datasets:
+  - name: guienvs
+    domain: web
+    json_path: data/aguvis_stage1/guienvs/guienv_pp.json
+    images_folder: data/aguvis_stage1/guienvs/images
+  - name: omniact
+    domain: web
+    json_path: data/aguvis_stage1/omniact/omniact_fix.json
+    images_folder: data/aguvis_stage1/omniact/images
+  - name: webui350k
+    domain: web
+    json_path: data/aguvis_stage1/webui350k/webui350k.json
+    images_folder: data/aguvis_stage1/webui350k/images
+
+

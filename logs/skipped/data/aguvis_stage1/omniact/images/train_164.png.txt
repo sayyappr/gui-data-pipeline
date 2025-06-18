@@ -1,0 +1,7 @@
+[Conversation Parse Error] 2 validation errors for ConversationBundle
+conversation.1.function-after[validate_data(), UIConversationInput].from
+  Input should be 'human' [type=literal_error, input_value='gpt', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+conversation.1.function-after[validate_data(), UIConversationOutput].actions
+  Field required [type=missing, input_value={'from': 'gpt', 'value': ... 'os', 'end_turn': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing

@@ -1,0 +1,51 @@
+All UI elements failed validation.
+
+Image file: 825af689-9d39-4011-9df4-7a3ba10cffb4.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "6OzRtjHQxeIRQMczpsfd",
+    "bbox": [
+      0.1574074074074074,
+      0.2025,
+      2.183333333333333,
+      0.255
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.2025, 2.183333333333333, 0.255]"
+  },
+  {
+    "index": 1,
+    "instruction": "DONE",
+    "bbox": [
+      1.988888888888889,
+      0.06875,
+      2.202777777777778,
+      0.12125
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.988888888888889, 0.06875, 2.202777777777778, 0.12125]"
+  },
+  {
+    "index": 2,
+    "instruction": "Text editing",
+    "bbox": [
+      1.1537037037037037,
+      0.16416666666666666,
+      1.4305555555555556,
+      0.20916666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.1537037037037037, 0.16416666666666666, 1.4305555555555556, 0.20916666666666667]"
+  },
+  {
+    "index": 3,
+    "instruction": "Share Gboard",
+    "bbox": [
+      1.4305555555555556,
+      0.16416666666666666,
+      1.7074074074074075,
+      0.20916666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.4305555555555556, 0.16416666666666666, 1.7074074074074075, 0.20916666666666667]"
+  }
+]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0484375, 1.0263888888888888, 0.076171875, 1.0486111111111112]
+[**Image**]: output_20240912_163215_original_screenshot
+[**Instruction**]: NAC Client
+[**Normalized BBox**]: [0.0484375, 1.0263888888888888, 0.076171875, 1.0486111111111112]

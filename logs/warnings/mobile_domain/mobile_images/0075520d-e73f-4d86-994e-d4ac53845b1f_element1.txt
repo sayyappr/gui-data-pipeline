@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: 0075520d-e73f-4d86-994e-d4ac53845b1f
+[**Instruction**]: Privacy error
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

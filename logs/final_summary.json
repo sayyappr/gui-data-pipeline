@@ -1,0 +1,47 @@
+{
+  "linux_splited.json": {
+    "total": 9671,
+    "parsed": 9664,
+    "skipped": 7,
+    "warnings": 0,
+    "parsed_percent": 99.93,
+    "skipped_percent": 0.07,
+    "warning_percent": 0.0
+  },
+  "macos_splited.json": {
+    "total": 4441,
+    "parsed": 4440,
+    "skipped": 1,
+    "warnings": 0,
+    "parsed_percent": 99.98,
+    "skipped_percent": 0.02,
+    "warning_percent": 0.0
+  },
+  "ricosca.json": {
+    "total": 18148,
+    "parsed": 18146,
+    "skipped": 2,
+    "warnings": 0,
+    "parsed_percent": 99.99,
+    "skipped_percent": 0.01,
+    "warning_percent": 0.0
+  },
+  "uibert_raw.json": {
+    "total": 5682,
+    "parsed": 5682,
+    "skipped": 0,
+    "warnings": 0,
+    "parsed_percent": 100.0,
+    "skipped_percent": 0.0,
+    "warning_percent": 0.0
+  },
+  "aw_mobile.json": {
+    "total": 15905,
+    "parsed": 15869,
+    "skipped": 36,
+    "warnings": 0,
+    "parsed_percent": 99.77,
+    "skipped_percent": 0.23,
+    "warning_percent": 0.0
+  }
+}

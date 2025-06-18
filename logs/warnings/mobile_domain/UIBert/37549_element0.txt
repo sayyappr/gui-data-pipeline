@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=1227, right=1080, bottom=1227
+[**Image**]: 37549
+[**Instruction**]: no tagging
+[**Normalized BBox**]: [0.0, 0.639, 1.0, 0.639]

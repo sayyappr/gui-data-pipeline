@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.63359375, 0.9409722222222222, 0.73359375, 1.01875]
+[**Image**]: output_20240912_153808_original_screenshot
+[**Instruction**]: Amazon Basics USB-A to Lightning Charger Cable, Nylon Braided Cord, MFi Certified Charger for Apple iPhone 14 13 12 11 X Xs Pro, Pro Max, Plus, iPad, 6 Foot, Rose Gold
+[**Normalized BBox**]: [0.63359375, 0.9409722222222222, 0.73359375, 1.01875]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.8111111111111111, 0.25666666666666665, 1.0013888888888889, 0.2733333333333333]
+[**Image**]: 20240905_112204_screenshot
+[**Instruction**]: Table Styles
+[**Normalized BBox**]: [0.8111111111111111, 0.25666666666666665, 1.0013888888888889, 0.2733333333333333]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=42, top=536, right=1038, bottom=536
+[**Image**]: 56027
+[**Instruction**]: launch the icon above the add a new icon
+[**Normalized BBox**]: [0.03888889029622078, 0.2789062559604645, 0.9611111283302307, 0.279296875]

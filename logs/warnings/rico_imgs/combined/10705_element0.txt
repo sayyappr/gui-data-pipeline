@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=577, right=540, bottom=577
+[**Image**]: 10705
+[**Instruction**]: click icon below the best of luck item
+[**Normalized BBox**]: [0.0, 0.600781261920929, 1.0, 0.6011718511581421]

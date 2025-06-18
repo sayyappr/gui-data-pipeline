@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=332, top=193, right=525, bottom=193
+[**Image**]: 47291
+[**Instruction**]: tap icon above now icon
+[**Normalized BBox**]: [0.6145833134651184, 0.20078125596046448, 0.9729166626930237, 0.201171875]

@@ -1,0 +1,4 @@
+[Conversation Parse Error] 1 validation error for UIConversationOutput
+from
+  Field required [type=missing, input_value={'from_': 'gpt', 'actions...one, text_others=None)]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing

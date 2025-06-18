@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=13, top=808, right=527, bottom=808
+[**Image**]: 69290
+[**Instruction**]: press item below share this app icon
+[**Normalized BBox**]: [0.0243055559694767, 0.8414062261581421, 0.9756944179534912, 0.841796875]

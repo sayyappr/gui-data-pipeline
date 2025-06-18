@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=333, right=540, bottom=333
+[**Image**]: 30745
+[**Instruction**]: click item above tours icon
+[**Normalized BBox**]: [0.0, 0.34648436307907104, 1.0, 0.3472656309604645]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: d10c5a90-f377-452c-a5c1-353b06f61854
+[**Instruction**]: m.ebay.com
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

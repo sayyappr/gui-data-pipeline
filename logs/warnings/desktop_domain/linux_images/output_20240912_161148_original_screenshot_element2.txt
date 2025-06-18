@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.32734375, 0.9756944444444444, 0.429296875, 1.0006944444444446]
+[**Image**]: output_20240912_161148_original_screenshot
+[**Instruction**]: Feels considerably warmer than the actual temperature due to the humidity.
+[**Normalized BBox**]: [0.32734375, 0.9756944444444444, 0.429296875, 1.0006944444444446]

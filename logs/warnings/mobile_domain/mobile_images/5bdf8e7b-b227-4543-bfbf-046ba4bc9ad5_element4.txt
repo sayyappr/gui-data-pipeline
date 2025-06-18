@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [1.9694444444444446, 0.02625, 2.1055555555555556, 0.0775]
+[**Image**]: 5bdf8e7b-b227-4543-bfbf-046ba4bc9ad5
+[**Instruction**]: Submit query
+[**Normalized BBox**]: [1.9694444444444446, 0.02625, 2.1055555555555556, 0.0775]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [-0.5740740740740741, 0.175, 0.3592592592592593, 0.23]
+[**Image**]: d157399f-9aee-42a7-bc90-63a59a4e4a8e
+[**Instruction**]: CEO presentation on company performance, new initiatives, Q&A session.
+[**Normalized BBox**]: [-0.5740740740740741, 0.175, 0.3592592592592593, 0.23]

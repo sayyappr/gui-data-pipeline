@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=605, top=101, right=605, bottom=153
+[**Image**]: output_20240912_160618_original_screenshot_sub0
+[**Instruction**]: Skip to main content
+[**Normalized BBox**]: [0.47265625, 0.14027777777777778, 0.47265625, 0.2125]

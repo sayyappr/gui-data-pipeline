@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.671875, 0.8305555555555556, 0.770703125, 1.023611111111111]
+[**Image**]: output_20240912_152911_original_screenshot
+[**Instruction**]: Slickdeals: Automatic Coupons and Deals
+[**Normalized BBox**]: [0.671875, 0.8305555555555556, 0.770703125, 1.023611111111111]

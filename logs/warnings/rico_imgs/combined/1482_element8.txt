@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=42, top=1304, right=1038, bottom=1304
+[**Image**]: 1482
+[**Instruction**]: open item below the redeem now for
+[**Normalized BBox**]: [0.03888889029622078, 0.678906261920929, 0.9611111283302307, 0.6792968511581421]

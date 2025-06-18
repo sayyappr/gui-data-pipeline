@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=56, top=127, right=57, bottom=127
+[**Image**]: 18267
+[**Instruction**]: select add to cart button after add to favorites on the page
+[**Normalized BBox**]: [0.052, 0.066, 0.053, 0.066]

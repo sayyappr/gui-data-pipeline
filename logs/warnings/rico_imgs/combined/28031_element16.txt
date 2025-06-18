@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=508, top=347, right=1000, bottom=347
+[**Image**]: 28031
+[**Instruction**]: press the item next to 45s item
+[**Normalized BBox**]: [0.47013887763023376, 0.18046875298023224, 0.9263888597488403, 0.18085937201976776]

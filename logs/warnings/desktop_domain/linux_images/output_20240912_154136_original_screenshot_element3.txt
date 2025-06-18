@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.6328125, 0.9944444444444445, 0.645703125, 1.0173611111111112]
+[**Image**]: output_20240912_154136_original_screenshot
+[**Instruction**]: Click to watch item - Mens Size 11 Nike Jordan Luka 2 Black White Blue Basketball Shoes DX8733 001 NEW
+[**Normalized BBox**]: [0.6328125, 0.9944444444444445, 0.645703125, 1.0173611111111112]

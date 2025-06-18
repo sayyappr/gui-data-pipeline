@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.7527777777777778, 0.9733333333333334, 0.8534722222222222, 1.001111111111111]
+[**Image**]: 20240905_193713_screenshot
+[**Instruction**]: <AXUIElement 0x10dd419e0> {pid=11581}
+[**Normalized BBox**]: [0.7527777777777778, 0.9733333333333334, 0.8534722222222222, 1.001111111111111]

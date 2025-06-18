@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.11458333333333333, 1.0037037037037038, 0.9745833333333334]
+[**Image**]: 18917263-73a0-44f1-b222-314e59453076
+[**Instruction**]: Google Chrome and ChromeOS Additional Terms of Service
+[**Normalized BBox**]: [0.0, 0.11458333333333333, 1.0037037037037038, 0.9745833333333334]

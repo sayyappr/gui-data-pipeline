@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=223, top=621, right=490, bottom=621
+[**Image**]: 18940
+[**Instruction**]: open the icon above the st. louis cardinals icon
+[**Normalized BBox**]: [0.4131944477558136, 0.646484375, 0.9069444537162781, 0.6468750238418579]

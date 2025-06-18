@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=336, top=378, right=525, bottom=378
+[**Image**]: 47291
+[**Instruction**]: open item below the welcome to hi icon
+[**Normalized BBox**]: [0.6222222447395325, 0.39375001192092896, 0.9729166626930237, 0.3941406309604645]

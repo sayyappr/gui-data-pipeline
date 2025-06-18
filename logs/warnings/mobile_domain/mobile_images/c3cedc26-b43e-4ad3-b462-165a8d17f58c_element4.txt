@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.058333333333333334, 1.7308333333333332, 0.9416666666666667, 1.8241666666666667]
+[**Image**]: c3cedc26-b43e-4ad3-b462-165a8d17f58c
+[**Instruction**]: “What’s the weather tomorrow?”
+[**Normalized BBox**]: [0.058333333333333334, 1.7308333333333332, 0.9416666666666667, 1.8241666666666667]

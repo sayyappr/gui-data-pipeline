@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.9381944444444444, 0.5055555555555555, 1.0020833333333334, 0.5433333333333333]
+[**Image**]: 20240905_155035_screenshot
+[**Instruction**]: Hierarchic Compact
+[**Normalized BBox**]: [0.9381944444444444, 0.5055555555555555, 1.0020833333333334, 0.5433333333333333]

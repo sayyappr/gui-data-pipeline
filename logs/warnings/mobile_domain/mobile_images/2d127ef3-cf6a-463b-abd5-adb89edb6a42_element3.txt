@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.175, 0.98875, 1.0, 1.0591666666666666]
+[**Image**]: 2d127ef3-cf6a-463b-abd5-adb89edb6a42
+[**Instruction**]: Add attachment
+[**Normalized BBox**]: [0.175, 0.98875, 1.0, 1.0591666666666666]

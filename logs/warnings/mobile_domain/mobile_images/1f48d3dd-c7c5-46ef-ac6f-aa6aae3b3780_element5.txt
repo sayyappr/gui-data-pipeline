@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [1.2944444444444445, 0.3254166666666667, 1.412037037037037, 0.36916666666666664]
+[**Image**]: 1f48d3dd-c7c5-46ef-ac6f-aa6aae3b3780
+[**Instruction**]: Current date
+[**Normalized BBox**]: [1.2944444444444445, 0.3254166666666667, 1.412037037037037, 0.36916666666666664]

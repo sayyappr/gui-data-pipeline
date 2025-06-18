@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]
+[**Image**]: f23d868b-4da6-4e3a-bf7b-bc1acad5fe54
+[**Instruction**]: May the Force be with you.
+[**Normalized BBox**]: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=1310, right=1080, bottom=1310
+[**Image**]: 48489
+[**Instruction**]: turn on the item below the how do i
+[**Normalized BBox**]: [0.0, 0.6820312738418579, 1.0, 0.682421863079071]

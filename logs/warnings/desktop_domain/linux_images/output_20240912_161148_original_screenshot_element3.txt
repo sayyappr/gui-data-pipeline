@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.19453125, 0.8388888888888889, 0.312109375, 1.0125]
+[**Image**]: output_20240912_161148_original_screenshot
+[**Instruction**]: Temperature Temperature Steady Steady Steady at current value of 89°. Overnight low of 80° at 4:00 AM.
+[**Normalized BBox**]: [0.19453125, 0.8388888888888889, 0.312109375, 1.0125]

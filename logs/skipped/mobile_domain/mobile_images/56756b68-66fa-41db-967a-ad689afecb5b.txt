@@ -1,0 +1,29 @@
+All UI elements failed validation.
+
+Image file: 56756b68-66fa-41db-967a-ad689afecb5b.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "2023_05_25_upcoming_presentation_outline",
+    "bbox": [
+      0.1574074074074074,
+      0.0375,
+      1.9305555555555556,
+      0.06708333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.9305555555555556, 0.06708333333333333]"
+  },
+  {
+    "index": 1,
+    "instruction": "opc71cqvrL12fiZfdrxx",
+    "bbox": [
+      0.17685185185185184,
+      0.11375,
+      2.1666666666666665,
+      0.13333333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]"
+  }
+]

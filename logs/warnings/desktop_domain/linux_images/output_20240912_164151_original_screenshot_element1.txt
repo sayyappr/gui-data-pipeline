@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=94, top=75, right=94, bottom=104
+[**Image**]: output_20240912_164151_original_screenshot
+[**Instruction**]: Library
+[**Normalized BBox**]: [0.03671875, 0.052083333333333336, 0.03671875, 0.07222222222222222]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=243, top=502, right=490, bottom=502
+[**Image**]: 18940
+[**Instruction**]: open the icon next to san francisco giants item
+[**Normalized BBox**]: [0.4506944417953491, 0.5230468511581421, 0.9069444537162781, 0.5234375]

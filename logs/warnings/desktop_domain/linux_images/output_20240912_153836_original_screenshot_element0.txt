@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.417578125, 0.9506944444444444, 0.60546875, 1.0340277777777778]
+[**Image**]: output_20240912_153836_original_screenshot
+[**Instruction**]: Protect your AirPods with AppleCare+ Unlimited repairs and expert support form the people who know your AirPods best.
+[**Normalized BBox**]: [0.417578125, 0.9506944444444444, 0.60546875, 1.0340277777777778]

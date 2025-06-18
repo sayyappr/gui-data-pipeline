@@ -1,0 +1,18 @@
+All UI elements failed validation.
+
+Image file: c19a3052-b4fc-4bda-84e5-be0f15af9f43.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "Don't add to calendar",
+    "bbox": [
+      0.175,
+      0.9979166666666667,
+      0.5666666666666667,
+      1.0241666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.175, 0.9979166666666667, 0.5666666666666667, 1.0241666666666667]"
+  }
+]

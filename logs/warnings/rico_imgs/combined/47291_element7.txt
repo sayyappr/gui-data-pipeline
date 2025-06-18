@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=189, top=268, right=487, bottom=268
+[**Image**]: 47291
+[**Instruction**]: press icon next to the hi team app
+[**Normalized BBox**]: [0.34930557012557983, 0.2789062559604645, 0.9013888835906982, 0.279296875]

@@ -1,0 +1,1 @@
+[Image Error] [Errno 2] No such file or directory: 'ddata/aguvis_stage1/omniact/images/train_4215.png'

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.902734375, 1.0034722222222223, 0.953515625, 1.0152777777777777]
+[**Image**]: output_20240912_165329_original_screenshot
+[**Instruction**]: Droid Sans Fallback
+[**Normalized BBox**]: [0.902734375, 1.0034722222222223, 0.953515625, 1.0152777777777777]

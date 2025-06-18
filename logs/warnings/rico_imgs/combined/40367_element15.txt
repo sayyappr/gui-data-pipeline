@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=1365, right=803, bottom=1529
+[**Image**]: 40367
+[**Instruction**]: press the item next to the notifications icon
+[**Normalized BBox**]: [0.7430555820465088, 0.7109375, 0.7437499761581421, 0.796093761920929]

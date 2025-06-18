@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=189, top=394, right=1080, bottom=394
+[**Image**]: 5862
+[**Instruction**]: open item below invite friends
+[**Normalized BBox**]: [0.17499999701976776, 0.205078125, 1.0, 0.20546874403953552]

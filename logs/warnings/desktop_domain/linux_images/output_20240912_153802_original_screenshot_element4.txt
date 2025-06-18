@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.268359375, 0.9784722222222222, 0.31953125, 1.0020833333333334]
+[**Image**]: output_20240912_153802_original_screenshot
+[**Instruction**]: $12.00 List: $39.99
+[**Normalized BBox**]: [0.268359375, 0.9784722222222222, 0.31953125, 1.0020833333333334]

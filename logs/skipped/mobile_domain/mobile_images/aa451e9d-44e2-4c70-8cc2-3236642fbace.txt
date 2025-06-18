@@ -1,0 +1,51 @@
+All UI elements failed validation.
+
+Image file: aa451e9d-44e2-4c70-8cc2-3236642fbace.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "2023_09_15_active_lion",
+    "bbox": [
+      0.1574074074074074,
+      0.0375,
+      1.25,
+      0.06708333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.25, 0.06708333333333333]"
+  },
+  {
+    "index": 1,
+    "instruction": "TV",
+    "bbox": [
+      1.3666666666666667,
+      0.03208333333333333,
+      1.8518518518518519,
+      0.07166666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.3666666666666667, 0.03208333333333333, 1.8518518518518519, 0.07166666666666667]"
+  },
+  {
+    "index": 2,
+    "instruction": "Submit query",
+    "bbox": [
+      1.9694444444444446,
+      0.02625,
+      2.1055555555555556,
+      0.0775
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.9694444444444446, 0.02625, 2.1055555555555556, 0.0775]"
+  },
+  {
+    "index": 3,
+    "instruction": "FhDM2ttCVXI8kvt8Qhh0\n",
+    "bbox": [
+      0.17685185185185184,
+      0.11375,
+      2.1666666666666665,
+      0.13333333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]"
+  }
+]

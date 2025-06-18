@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=270, top=114, right=270, bottom=153
+[**Image**]: 6875
+[**Instruction**]: click the icon above getting stuff done app
+[**Normalized BBox**]: [0.4993055462837219, 0.11874999850988388, 0.5, 0.15976563096046448]

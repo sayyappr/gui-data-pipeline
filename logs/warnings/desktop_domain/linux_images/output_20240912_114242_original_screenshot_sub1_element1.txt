@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=985, top=391, right=985, bottom=391
+[**Image**]: output_20240912_114242_original_screenshot_sub1
+[**Instruction**]: A23-CurvedArrow-Gray-Left
+[**Normalized BBox**]: [0.76953125, 0.5430555555555555, 0.76953125, 0.5430555555555555]

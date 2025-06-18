@@ -1,0 +1,29 @@
+All UI elements failed validation.
+
+Image file: 0c35be02-844b-4ff8-9896-26404c7e3f43.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "2023_04_11_budget_home_renovation",
+    "bbox": [
+      0.1574074074074074,
+      0.0375,
+      1.9305555555555556,
+      0.06708333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.9305555555555556, 0.06708333333333333]"
+  },
+  {
+    "index": 1,
+    "instruction": "InGbj8gOUjcVMtYWxuA2",
+    "bbox": [
+      0.17685185185185184,
+      0.11375,
+      2.1666666666666665,
+      0.13333333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]"
+  }
+]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.45625, 0.9544444444444444, 0.6743055555555556, 1.048888888888889]
+[**Image**]: 20240904_171312_screenshot
+[**Instruction**]: China’s Xinjiang vows more support for firms under US ‘forced labour’ sanctions
+[**Normalized BBox**]: [0.45625, 0.9544444444444444, 0.6743055555555556, 1.048888888888889]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.175, 0.9979166666666667, 0.5666666666666667, 1.0241666666666667]
+[**Image**]: 3ac6f203-394e-48e0-8c43-854f07a987ba
+[**Instruction**]: Don't add to calendar
+[**Normalized BBox**]: [0.175, 0.9979166666666667, 0.5666666666666667, 1.0241666666666667]

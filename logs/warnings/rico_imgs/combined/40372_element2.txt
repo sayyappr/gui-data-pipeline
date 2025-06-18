@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=943, top=220, right=943, bottom=357
+[**Image**]: 40372
+[**Instruction**]: turn on item below saved audios
+[**Normalized BBox**]: [0.8729166388511658, 0.11484374850988388, 0.8736110925674438, 0.18593749403953552]

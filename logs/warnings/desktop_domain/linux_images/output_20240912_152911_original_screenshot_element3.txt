@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.565234375, 0.8305555555555556, 0.6640625, 1.023611111111111]
+[**Image**]: output_20240912_152911_original_screenshot
+[**Instruction**]: Trusted Shops extension for Google Chrome
+[**Normalized BBox**]: [0.565234375, 0.8305555555555556, 0.6640625, 1.023611111111111]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=220, right=803, bottom=357
+[**Image**]: 40372
+[**Instruction**]: click the item to the right of 2017 04 18__13 item
+[**Normalized BBox**]: [0.7430555820465088, 0.11484374850988388, 0.7437499761581421, 0.18593749403953552]

@@ -1,0 +1,29 @@
+All UI elements failed validation.
+
+Image file: 6e9ec204-41fd-4d31-a93f-9b80310eb290.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "2023_09_15_active_lion",
+    "bbox": [
+      0.1574074074074074,
+      0.0375,
+      1.9305555555555556,
+      0.06708333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.9305555555555556, 0.06708333333333333]"
+  },
+  {
+    "index": 1,
+    "instruction": "FhDM2ttCVXI8kvt8Qhh0\n",
+    "bbox": [
+      0.17685185185185184,
+      0.11375,
+      2.1666666666666665,
+      0.13333333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]"
+  }
+]

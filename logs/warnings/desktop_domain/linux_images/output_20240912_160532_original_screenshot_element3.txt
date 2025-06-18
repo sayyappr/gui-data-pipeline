@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.56796875, 0.95625, 0.682421875, 1.0090277777777779]
+[**Image**]: output_20240912_160532_original_screenshot
+[**Instruction**]: The Associated Press The Associated Press 16 hours Israeli airstrikes hit UN school and homes in Gaza, killing at least 34 people, hospitals say
+[**Normalized BBox**]: [0.56796875, 0.95625, 0.682421875, 1.0090277777777779]

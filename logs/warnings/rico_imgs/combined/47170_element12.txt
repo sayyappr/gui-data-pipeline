@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=94, top=315, right=540, bottom=315
+[**Image**]: 47170
+[**Instruction**]: choose icon below the ayubsumra item
+[**Normalized BBox**]: [0.17499999701976776, 0.3277343809604645, 1.0, 0.328125]

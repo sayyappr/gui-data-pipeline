@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [1.988888888888889, 0.06875, 2.202777777777778, 0.12125]
+[**Image**]: 7a30d511-0747-4b72-9291-65cba8e1db6b
+[**Instruction**]: SEARCH
+[**Normalized BBox**]: [1.988888888888889, 0.06875, 2.202777777777778, 0.12125]

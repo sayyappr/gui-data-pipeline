@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.461328125, 0.9993055555555556, 0.574609375, 1.0173611111111112]
+[**Image**]: output_20240912_163309_original_screenshot
+[**Instruction**]: Switch windows of an application
+[**Normalized BBox**]: [0.461328125, 0.9993055555555556, 0.574609375, 1.0173611111111112]

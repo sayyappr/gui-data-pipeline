@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: beaf0c91-2224-449a-be94-eeb31cd1195c
+[**Instruction**]: Clock error
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

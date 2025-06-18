@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.25277777777777777, 0.97, 0.5034722222222222, 1.008888888888889]
+[**Image**]: 20240905_155903_screenshot
+[**Instruction**]: JetBrains Privacy Notice
+[**Normalized BBox**]: [0.25277777777777777, 0.97, 0.5034722222222222, 1.008888888888889]

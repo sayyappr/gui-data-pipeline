@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=705, right=803, bottom=869
+[**Image**]: 40367
+[**Instruction**]: launch icon next to the notifications icon
+[**Normalized BBox**]: [0.7430555820465088, 0.3671875, 0.7437499761581421, 0.45234376192092896]

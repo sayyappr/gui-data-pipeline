@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=442, top=347, right=996, bottom=347
+[**Image**]: 28013
+[**Instruction**]: turn on icon above 27 los angeles item
+[**Normalized BBox**]: [0.4090277850627899, 0.18046875298023224, 0.9222221970558167, 0.18085937201976776]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=1530, right=803, bottom=1694
+[**Image**]: 40367
+[**Instruction**]: click the icon to the right of the ringtones icon
+[**Normalized BBox**]: [0.7430555820465088, 0.796875, 0.7437499761581421, 0.882031261920929]

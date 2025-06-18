@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [-0.5740740740740741, 0.175, 0.3592592592592593, 0.23]
+[**Image**]: 81729983-7b50-4cb8-b03f-190476764b23
+[**Instruction**]: Offer custom-painted portraits of pets based on photos provided by clients.
+[**Normalized BBox**]: [-0.5740740740740741, 0.175, 0.3592592592592593, 0.23]

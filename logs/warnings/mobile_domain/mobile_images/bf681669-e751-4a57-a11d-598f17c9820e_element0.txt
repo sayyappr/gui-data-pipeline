@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.6388888888888888, 0.06708333333333333]
+[**Image**]: bf681669-e751-4a57-a11d-598f17c9820e
+[**Instruction**]: 2023_04_11_budget_home_renovation
+[**Normalized BBox**]: [0.1574074074074074, 0.0375, 1.6388888888888888, 0.06708333333333333]

@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.463671875, 0.7027777777777777, 0.64765625, 1.0180555555555555]
+[**Image**]: output_20240912_153343_original_screenshot
+[**Instruction**]: Cook Along With the Mayans Make an ancient recipe for yourself
+[**Normalized BBox**]: [0.463671875, 0.7027777777777777, 0.64765625, 1.0180555555555555]

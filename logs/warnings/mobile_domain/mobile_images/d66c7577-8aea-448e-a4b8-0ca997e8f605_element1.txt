@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.11458333333333333, 2.3814814814814813, 0.9745833333333334]
+[**Image**]: d66c7577-8aea-448e-a4b8-0ca997e8f605
+[**Instruction**]: com.google.android.conscrypt
+[**Normalized BBox**]: [0.0, 0.11458333333333333, 2.3814814814814813, 0.9745833333333334]

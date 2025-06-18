@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: 50e463b5-c607-4af4-bf76-d5c52897a34a
+[**Instruction**]: Sex video 18+ only [Onlyfans, Weibo, TikTok, etc] – Telegram
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

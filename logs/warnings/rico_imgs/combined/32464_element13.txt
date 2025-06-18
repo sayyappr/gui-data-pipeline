@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=328, right=540, bottom=328
+[**Image**]: 32464
+[**Instruction**]: choose the icon below the view recent updates
+[**Normalized BBox**]: [0.0, 0.3414062559604645, 1.0, 0.341796875]

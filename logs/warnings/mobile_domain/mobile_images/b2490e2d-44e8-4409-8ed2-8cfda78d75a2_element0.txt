@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: b2490e2d-44e8-4409-8ed2-8cfda78d75a2
+[**Instruction**]: www.instagram.com
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

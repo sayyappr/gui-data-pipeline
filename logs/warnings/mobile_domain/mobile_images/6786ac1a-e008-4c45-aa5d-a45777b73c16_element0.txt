@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.1375, 1.0037037037037038, 0.975]
+[**Image**]: 6786ac1a-e008-4c45-aa5d-a45777b73c16
+[**Instruction**]: Telegram: Contact @SimpleMobileTools
+[**Normalized BBox**]: [0.0, 0.1375, 1.0037037037037038, 0.975]

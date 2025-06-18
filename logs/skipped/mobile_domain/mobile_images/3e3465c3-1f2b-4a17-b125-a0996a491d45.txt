@@ -1,0 +1,117 @@
+All UI elements failed validation.
+
+Image file: 3e3465c3-1f2b-4a17-b125-a0996a491d45.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "2023_04_11_budget_home_renovation",
+    "bbox": [
+      0.1574074074074074,
+      0.0375,
+      1.6388888888888888,
+      0.06708333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.1574074074074074, 0.0375, 1.6388888888888888, 0.06708333333333333]"
+  },
+  {
+    "index": 1,
+    "instruction": "InGbj8gOUjcVMtYWxuA2\n",
+    "bbox": [
+      0.11851851851851852,
+      0.07875,
+      2.2222222222222223,
+      0.37333333333333335
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.11851851851851852, 0.07875, 2.2222222222222223, 0.37333333333333335]"
+  },
+  {
+    "index": 2,
+    "instruction": "Inline code",
+    "bbox": [
+      1.1768518518518518,
+      0.3779166666666667,
+      1.2944444444444445,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.1768518518518518, 0.3779166666666667, 1.2944444444444445, 0.4216666666666667]"
+  },
+  {
+    "index": 3,
+    "instruction": "Table",
+    "bbox": [
+      1.412037037037037,
+      0.3779166666666667,
+      1.5296296296296297,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.412037037037037, 0.3779166666666667, 1.5296296296296297, 0.4216666666666667]"
+  },
+  {
+    "index": 4,
+    "instruction": "Quote",
+    "bbox": [
+      1.5296296296296297,
+      0.3779166666666667,
+      1.6472222222222221,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.5296296296296297, 0.3779166666666667, 1.6472222222222221, 0.4216666666666667]"
+  },
+  {
+    "index": 5,
+    "instruction": "Heading 1",
+    "bbox": [
+      1.6472222222222221,
+      0.3779166666666667,
+      1.7648148148148148,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.6472222222222221, 0.3779166666666667, 1.7648148148148148, 0.4216666666666667]"
+  },
+  {
+    "index": 6,
+    "instruction": "Heading 2",
+    "bbox": [
+      1.7648148148148148,
+      0.3779166666666667,
+      1.8824074074074073,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.7648148148148148, 0.3779166666666667, 1.8824074074074073, 0.4216666666666667]"
+  },
+  {
+    "index": 7,
+    "instruction": "Heading 3",
+    "bbox": [
+      1.8824074074074073,
+      0.3779166666666667,
+      2.0,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [1.8824074074074073, 0.3779166666666667, 2.0, 0.4216666666666667]"
+  },
+  {
+    "index": 8,
+    "instruction": "Horizontal line",
+    "bbox": [
+      2.0,
+      0.3779166666666667,
+      2.1175925925925925,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [2.0, 0.3779166666666667, 2.1175925925925925, 0.4216666666666667]"
+  },
+  {
+    "index": 9,
+    "instruction": "Strike out",
+    "bbox": [
+      2.1175925925925925,
+      0.3779166666666667,
+      2.2222222222222223,
+      0.4216666666666667
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [2.1175925925925925, 0.3779166666666667, 2.2222222222222223, 0.4216666666666667]"
+  }
+]

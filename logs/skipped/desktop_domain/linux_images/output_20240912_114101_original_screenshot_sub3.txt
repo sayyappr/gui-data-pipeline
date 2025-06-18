@@ -1,0 +1,1 @@
+[Image Error] [Errno 2] No such file or directory: 'data/desktop_domain/linux_images/output_20240912_114101_original_screenshot_sub3.png'

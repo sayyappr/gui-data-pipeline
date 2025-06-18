@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=207, top=680, right=490, bottom=680
+[**Image**]: 18940
+[**Instruction**]: click the item next to the tampa bay rays
+[**Normalized BBox**]: [0.38402777910232544, 0.708203136920929, 0.9069444537162781, 0.7085937261581421]

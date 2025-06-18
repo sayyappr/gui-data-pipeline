@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.33671875, 0.9486111111111111, 0.37265625, 1.0131944444444445]
+[**Image**]: output_20240912_153855_original_screenshot
+[**Instruction**]: 来自www.facebook.com的“amazon”
+[**Normalized BBox**]: [0.33671875, 0.9486111111111111, 0.37265625, 1.0131944444444445]

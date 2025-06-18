@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.8555555555555555, 0.4588888888888889, 1.0909722222222222, 0.7144444444444444]
+[**Image**]: 20240905_135955_screenshot
+[**Instruction**]: ESSENTIALS, A+ Apps for Students, Make the most of class and study time
+[**Normalized BBox**]: [0.8555555555555555, 0.4588888888888889, 1.0909722222222222, 0.7144444444444444]

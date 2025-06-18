@@ -1,0 +1,34 @@
+datasets:
+  # desktop_domain
+  - name: linux
+    domain: linux
+    json_path: data/desktop_domain/linux_splited.json
+    images_folder: data/desktop_domain/linux_images/
+  - name: macos
+    domain: macos
+    json_path: data/desktop_domain/macos_splited.json
+    images_folder: data/desktop_domain/macos_images/
+  - name: windows
+    domain: windows
+    json_path: desktop_domain/windows_splited.json
+    images_folder: desktop_domain/windows_images/
+  # #web_domain
+  # # - json_path: web_domain/fineweb_3m.json
+  # #   images_folder: web_domain/fineweb_images/
+  # # - json_path: web_domain/seeclick_web.json
+  # #   images_folder: web_domain/seeclick_web_images/
+  #mobile_domain
+  - name: ricosca
+    domain: mobile
+    json_path: data/mobile_domain/ricosca.json
+    images_folder: data/mobile_domain/rico_imgs/combined
+  - name: UIBert
+    domain: mobile
+    json_path: data/mobile_domain/uibert_raw.json
+    images_folder: data/mobile_domain/UIBert/
+  - name: mobile
+    domain: mobile
+    json_path: data/mobile_domain/aw_mobile.json
+    images_folder: data/mobile_domain/mobile_images/
+  # # - json_path: mobile_domain/amex_raw.json
+  # #   images_folder: mobile_domain/amex_images/

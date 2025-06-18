@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.0, 0.11458333333333333, 1.012962962962963, 0.9745833333333334]
+[**Image**]: 5e1f55ec-a15e-409b-afd2-82e69508e615
+[**Instruction**]: Open Source Licenses
+[**Normalized BBox**]: [0.0, 0.11458333333333333, 1.012962962962963, 0.9745833333333334]

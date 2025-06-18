@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.62421875, 0.9944444444444445, 0.69375, 1.011111111111111]
+[**Image**]: output_20240912_153435_original_screenshot
+[**Instruction**]: 6371.0 km[6]
+[**Normalized BBox**]: [0.62421875, 0.9944444444444445, 0.69375, 1.011111111111111]

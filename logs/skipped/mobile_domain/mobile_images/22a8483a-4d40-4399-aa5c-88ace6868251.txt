@@ -1,0 +1,18 @@
+All UI elements failed validation.
+
+Image file: 22a8483a-4d40-4399-aa5c-88ace6868251.png
+
+Failed elements:
+[
+  {
+    "index": 0,
+    "instruction": "x 2023-10-15 ",
+    "bbox": [
+      0.17685185185185184,
+      0.11375,
+      2.1666666666666665,
+      0.13333333333333333
+    ],
+    "error": "ValueError: [Critical] Normalized bbox out of range: [0.17685185185185184, 0.11375, 2.1666666666666665, 0.13333333333333333]"
+  }
+]

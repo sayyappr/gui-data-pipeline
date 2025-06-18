@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=0, top=137, right=540, bottom=137
+[**Image**]: 69291
+[**Instruction**]: press item above monday item
+[**Normalized BBox**]: [0.0, 0.14218750596046448, 1.0, 0.142578125]

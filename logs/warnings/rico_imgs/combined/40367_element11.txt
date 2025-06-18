@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=375, right=803, bottom=539
+[**Image**]: 40367
+[**Instruction**]: turn off item next to the notifications app
+[**Normalized BBox**]: [0.7430555820465088, 0.1953125, 0.7437499761581421, 0.28046876192092896]

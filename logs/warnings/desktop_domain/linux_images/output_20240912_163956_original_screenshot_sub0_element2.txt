@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=94, top=75, right=94, bottom=104
+[**Image**]: output_20240912_163956_original_screenshot_sub0
+[**Instruction**]: Recently Played
+[**Normalized BBox**]: [0.0734375, 0.10416666666666667, 0.0734375, 0.14444444444444443]

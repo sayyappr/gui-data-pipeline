@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.175, 0.9954166666666666, 0.7638888888888888, 1.0133333333333334]
+[**Image**]: 64b860a3-6c6d-4218-8fb1-bbd546c1e2be
+[**Instruction**]: Reminders are disabled in Android Settings
+[**Normalized BBox**]: [0.175, 0.9954166666666666, 0.7638888888888888, 1.0133333333333334]

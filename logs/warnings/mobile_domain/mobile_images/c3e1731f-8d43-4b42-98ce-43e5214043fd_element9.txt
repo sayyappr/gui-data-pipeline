@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.9287037037037037, 0.7666666666666667, 1.298148148148148, 0.8191666666666667]
+[**Image**]: c3e1731f-8d43-4b42-98ce-43e5214043fd
+[**Instruction**]: Choose a sound
+[**Normalized BBox**]: [0.9287037037037037, 0.7666666666666667, 1.298148148148148, 0.8191666666666667]

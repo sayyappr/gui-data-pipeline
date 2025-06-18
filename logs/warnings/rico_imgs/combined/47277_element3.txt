@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=21, top=278, right=498, bottom=278
+[**Image**]: 47277
+[**Instruction**]: click icon below the hi friends app
+[**Normalized BBox**]: [0.03888889029622078, 0.2890625, 0.9222221970558167, 0.28984373807907104]

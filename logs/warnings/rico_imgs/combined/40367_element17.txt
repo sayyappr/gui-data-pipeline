@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=803, top=210, right=803, bottom=373
+[**Image**]: 40367
+[**Instruction**]: select the icon to the right of the notifications item
+[**Normalized BBox**]: [0.7430555820465088, 0.109375, 0.7437499761581421, 0.19453124701976776]

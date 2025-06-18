@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.75078125, 0.9409722222222222, 0.855078125, 1.0020833333333334]
+[**Image**]: output_20240912_153808_original_screenshot
+[**Instruction**]: Amazon Basics 36W Two-Port USB-C Wall Charger for Tablets and Phones with Power Delivery - White, 2.34" x 1.09" x 2.21" in (PD36U-2TNB)
+[**Normalized BBox**]: [0.75078125, 0.9409722222222222, 0.855078125, 1.0020833333333334]

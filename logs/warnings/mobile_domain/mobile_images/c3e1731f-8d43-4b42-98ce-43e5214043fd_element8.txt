@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.5509259259259259, 0.71, 1.298148148148148, 0.7491666666666666]
+[**Image**]: c3e1731f-8d43-4b42-98ce-43e5214043fd
+[**Instruction**]: You can play soothing music to help you fall asleep. Sleep sounds don't play automatically.
+[**Normalized BBox**]: [0.5509259259259259, 0.71, 1.298148148148148, 0.7491666666666666]

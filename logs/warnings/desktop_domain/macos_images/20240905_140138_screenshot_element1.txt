@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [Critical] Normalized bbox out of range: [0.9854166666666667, 0.13777777777777778, 1.2395833333333333, 0.4577777777777778]
+[**Image**]: 20240905_140138_screenshot
+[**Instruction**]: MAJOR UPDATE, Asphalt Legends: Unite Revs Up, Hit the track and take in the sights
+[**Normalized BBox**]: [0.9854166666666667, 0.13777777777777778, 1.2395833333333333, 0.4577777777777778]

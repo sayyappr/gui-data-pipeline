@@ -1,0 +1,4 @@
+[BBox Parse Error] ValueError: [BBox Parse Error] Invalid dimensions: left=445, top=577, right=445, bottom=577
+[**Image**]: 30124
+[**Instruction**]: choose icon next to the peanut butter reindeer item
+[**Normalized BBox**]: [0.824305534362793, 0.600781261920929, 0.824999988079071, 0.6011718511581421]
