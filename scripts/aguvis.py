@@ -320,6 +320,26 @@ def main():
 
     # Map dataset name to its domain
     domain_map = {ds["name"]: ds["domain"] for ds in dataset_configs}
+    
+            # === Save parsed steps per dataset name (e.g., webui350k, guienvs) ===
+    for dataset in dataset_configs:
+        name = dataset["name"]  # e.g., 'webui350k'
+        steps_for_dataset = [s for s in steps if s.image_path.startswith(f"{name}/")]
+
+        if not steps_for_dataset:
+            continue  # skip if no steps parsed for this dataset
+
+        traj = Trajectory(
+            data_source="aguvis_stage2",
+            is_navigation=True,
+            domain=domain_map.get(name, "web"),
+            steps=steps_for_dataset
+        )
+
+        out_path = f"{OUTPUT_PATH}/aguvis2_parsed_{name}.json"
+        with open(out_path, "w") as f:
+            f.write(traj.model_dump_json(indent=2, exclude_none=True))
+        print(f"🗂️  Saved parsed trajectory for dataset '{name}' to {out_path}")
 
     # Group steps by domain
     domain_to_steps = defaultdict(list)
@@ -389,7 +409,7 @@ def main():
     with open("logs/aguvis_stage1/failure_summary_log.json", "w") as f:
         json.dump(normalized_failure_reasons, f, indent=2)
 
-    print("OS Atlas parsing complete.")
+    print("AGUVIS Stage 1 parsing complete.")
     print(f"Parsed steps: {summary['parsed_successfully']} / {summary['total_samples']}")
     print(f"Warnings: {summary['warnings_count']} | Skipped: {summary['skipped_count']}")
 
