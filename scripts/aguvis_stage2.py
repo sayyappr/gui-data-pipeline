@@ -15,9 +15,9 @@ print("Starting script...")
 # failure_reasons_counter[dataset_name][(exception_type, message)] = count
 failure_reasons_counter = defaultdict(lambda: defaultdict(int))
 
-CONFIG_PATH = "config/aguvis_config.yaml"
-OUTPUT_PATH = "outputs/aguvis_stage1"
-LOG_DIR = Path("logs/aguvis_stage1")
+CONFIG_PATH = "config/aguvis2_config.yaml"
+OUTPUT_PATH = "outputs/aguvis_stage2"
+LOG_DIR = Path("logs/aguvis_stage2")
 WARNING_LOG_DIR = LOG_DIR / "warnings"
 SKIPPED_LOG_DIR = LOG_DIR / "skipped"
 SUMMARY_PATH = LOG_DIR / "summary.json"
@@ -89,13 +89,162 @@ def parse_element(raw, image_width, image_height):
     return el
 
 
-def parse_interaction_step(item, image_path_root, dataset_name):
-    image_id = Path(item["image"]).stem
-    image_path = os.path.join(image_path_root, item["image"])
+# def parse_interaction_step(item, image_path_root, dataset_name):
+#     from schema import UIConversationInput, UIConversationOutput, UIAction
+#     import re
 
+#     # image_id = Path(item["image"]).stem
+#     # image_path = os.path.join(image_path_root, item["image"])
+    
+#     image_field = item.get("image")
+
+#     # Log subdir info (needed for logging failures)
+#     dataset_dir = Path(image_path_root).parent.name
+#     json_file_stem = Path(image_path_root).name
+#     log_subdir = Path(dataset_dir) / json_file_stem
+
+#     # Check if it's a multi-image sample
+#     if isinstance(image_field, list):
+#         image_id = "_".join(Path(f).stem for f in image_field)[:80]  # Compact ID
+#         log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", "[Skipped] Multi-image entry not supported.")
+#         summary["skipped_count"] += 1
+#         summary["skipped_files"].append(image_id)
+#         per_dataset_summary[dataset_name]["skipped"] += 1
+#         return None
+
+#     elif not isinstance(image_field, str):
+#         log_to(SKIPPED_LOG_DIR / log_subdir / "unknown_image.txt", f"[Skipped] Invalid image field type: {repr(image_field)}")
+#         summary["skipped_count"] += 1
+#         summary["skipped_files"].append("unknown_image")
+#         per_dataset_summary[dataset_name]["skipped"] += 1
+#         return None
+
+#     image_id = Path(image_field).stem
+#     image_path = os.path.join(image_path_root, image_field)
+
+
+#     dataset_dir = Path(image_path_root).parent.name
+#     json_file_stem = Path(image_path_root).name
+#     log_subdir = Path(dataset_dir) / json_file_stem
+
+#     try:
+#         with Image.open(image_path) as img:
+#             width, height = img.size
+#     except Exception as e:
+#         err_type = type(e).__name__
+#         err_msg = str(e)
+#         failure_reasons_counter[dataset_name][(err_type, err_msg)] += 1
+#         summary["skipped_count"] += 1
+#         summary["skipped_files"].append(image_id)
+#         per_dataset_summary[dataset_name]["skipped"] += 1
+#         log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", f"[Image Error] {e}")
+#         return None
+
+#     conv_list = item.get("conversations", [])
+#     conversation_pairs = []
+
+#     i = 0
+#     while i < len(conv_list):
+#         if conv_list[i]["from"] != "human":
+#             i += 1
+#             continue
+
+#         try:
+#             human = UIConversationInput.model_validate(conv_list[i])
+#         except Exception as e:
+#             summary["skipped_count"] += 1
+#             summary["skipped_files"].append(image_id)
+#             per_dataset_summary[dataset_name]["skipped"] += 1
+#             log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", f"[Human Parse Error] {e}")
+#             return None
+
+#         i += 1
+#         actions = []
+
+#         while i < len(conv_list) and conv_list[i]["from"] == "gpt":
+#             gpt_entry = conv_list[i]
+#             value = gpt_entry.get("value", "").strip()
+#             lines = value.split("\n")
+
+#             for line in lines:
+#                 line = line.strip()
+#                 if not line:
+#                     continue
+#                 if line.lower().startswith("observation:"):
+#                     actions.append(UIAction(text_observation_desc=line))
+#                 elif line.lower().startswith("thought:"):
+#                     actions.append(UIAction(text_reasoning=line))
+#                 elif line.lower().startswith("action:"):
+#                     actions.append(UIAction(text_subtask=line))
+#                 elif line.startswith("pyautogui.") or line.startswith("mobile."):
+#                     # Support multi-line pyautogui commands
+#                     for cmd in line.split("\\n"):
+#                         cmd = cmd.strip()
+#                         if not cmd:
+#                             continue
+#                         match = re.match(r"(pyautogui|mobile)\.(\w+)\((.*?)\)", cmd)
+#                         if match:
+#                             method_type, method_name, args = match.groups()
+#                             # Handle pyautogui.click(x=..., y=...)
+#                             xy_match = re.findall(r"x=([0-9.]+),\s*y=([0-9.]+)", args)
+#                             if xy_match:
+#                                 for x, y in xy_match:
+#                                     abs_x = int(round(float(x) * width))
+#                                     abs_y = int(round(float(y) * height))
+#                                     cmd = f"{method_type}.{method_name}(x={abs_x}, y={abs_y})"
+#                                     actions.append(UIAction(pyautogui=cmd))
+#                             else:
+#                                 actions.append(UIAction(pyautogui=cmd))
+#                         else:
+#                             actions.append(UIAction(pyautogui=cmd))
+#             if gpt_entry.get("end_turn", False):
+#                 i += 1
+#                 break
+#             i += 1
+
+#         gpt = UIConversationOutput(from_="gpt", actions=actions)
+#         conversation_pairs.append([human, gpt])
+
+#     summary["parsed_successfully"] += 1
+#     per_dataset_summary[dataset_name]["parsed"] += 1
+
+#     return InteractionStep(
+#         image_path=f"{dataset_name}/{item['image']}",
+#         image_width=width,
+#         image_height=height,
+#         all_ui_elements=None,
+#         conversation_list=conversation_pairs,
+#     )
+
+def parse_interaction_step(item, image_path_root, dataset_name):
+    from schema import UIConversationInput, UIConversationOutput, UIAction
+    import re
+
+    image_field = item.get("image")
+
+    # Prepare log paths
     dataset_dir = Path(image_path_root).parent.name
     json_file_stem = Path(image_path_root).name
     log_subdir = Path(dataset_dir) / json_file_stem
+
+    # Skip multi-image entries
+    if isinstance(image_field, list):
+        image_id = "_".join(Path(f).stem for f in image_field)[:80]
+        log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", "[Skipped] Multi-image entry not supported.")
+        summary["skipped_count"] += 1
+        summary["skipped_files"].append(image_id)
+        per_dataset_summary[dataset_name]["skipped"] += 1
+        return None
+
+    if not isinstance(image_field, str):
+        log_to(SKIPPED_LOG_DIR / log_subdir / "unknown_image.txt", f"[Skipped] Invalid image field type: {repr(image_field)}")
+        summary["skipped_count"] += 1
+        summary["skipped_files"].append("unknown_image")
+        per_dataset_summary[dataset_name]["skipped"] += 1
+        return None
+
+    image_id = Path(image_field).stem
+    image_path = os.path.join(image_path_root, image_field)
 
     try:
         with Image.open(image_path) as img:
@@ -104,7 +253,6 @@ def parse_interaction_step(item, image_path_root, dataset_name):
         err_type = type(e).__name__
         err_msg = str(e)
         failure_reasons_counter[dataset_name][(err_type, err_msg)] += 1
-
         summary["skipped_count"] += 1
         summary["skipped_files"].append(image_id)
         per_dataset_summary[dataset_name]["skipped"] += 1
@@ -113,62 +261,105 @@ def parse_interaction_step(item, image_path_root, dataset_name):
 
     conv_list = item.get("conversations", [])
     conversation_pairs = []
-    if conv_list:
+    i = 0
+
+    while i < len(conv_list):
+        if conv_list[i]["from"] != "human":
+            i += 1
+            continue
+
         try:
-            from schema import UIConversationInput, UIConversationOutput, UIAction
-            import re
-
-            if len(conv_list) % 2 != 0:
-                warnings.warn(f"Odd-length conversation in {image_id}")
-                summary["warnings_count"] += 1
-                summary["warning_files"].append(image_id)
-                per_dataset_summary[dataset_name]["warnings_count"] += 1
-
-            for i in range(0, len(conv_list) - 1, 2):
-                human_raw = conv_list[i]
-                gpt_raw = conv_list[i+1]
-                human = UIConversationInput.model_validate(human_raw)
-
-                action_lines = gpt_raw.get("value", "").strip().split("\n")
-                actions = []
-                for line in action_lines:
-                    line = line.strip()
-                    if not line:
-                        continue
-                    if line.startswith("pyautogui."):
-                        match = re.match(r"pyautogui\.(\w+)\(x=([0-9.]+), y=([0-9.]+)\)", line)
-                        if match:
-                            method, x, y = match.groups()
-                            abs_x = int(round(float(x) * width))
-                            abs_y = int(round(float(y) * height))
-                            line = f"pyautogui.{method}(x={abs_x}, y={abs_y})"
-                            actions.append(UIAction(pyautogui=line))
-                    elif line.lower().startswith("action:"):
-                        actions.append(UIAction(text_subtask=line))
-                    elif line.lower().startswith("thought:"):
-                        actions.append(UIAction(text_reasoning=line))
-                    elif line.lower().startswith("observation:"):
-                        actions.append(UIAction(text_observation_desc=line))
-
-                gpt = UIConversationOutput(from_="gpt", actions=actions)
-                conversation_pairs.append([human, gpt])
+            human = UIConversationInput.model_validate(conv_list[i])
         except Exception as e:
             summary["skipped_count"] += 1
-            per_dataset_summary[dataset_name]["skipped"] += 1
             summary["skipped_files"].append(image_id)
-            log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", f"[Conversation Parse Error] {e}")
+            per_dataset_summary[dataset_name]["skipped"] += 1
+            log_to(SKIPPED_LOG_DIR / log_subdir / f"{image_id}.txt", f"[Human Parse Error] {e}")
             return None
+
+        i += 1
+        actions = []
+        current_action = UIAction()
+
+        while i < len(conv_list) and conv_list[i]["from"] == "gpt":
+            gpt_entry = conv_list[i]
+            value = gpt_entry.get("value", "").strip()
+            lines = value.split("\n")
+
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+
+                # Observation / Thought / Action grouped into one UIAction
+                if line.lower().startswith("observation:"):
+                    current_action.text_observation_desc = line
+                elif line.lower().startswith("thought:"):
+                    current_action.text_reasoning = line
+                elif line.lower().startswith("action:"):
+                    current_action.text_subtask = line
+                elif line.startswith("pyautogui.") or line.startswith("mobile."):
+                    # If we have a populated grouped action, flush it before appending commands
+                    if current_action != UIAction():
+                        actions.append(current_action)
+                        current_action = UIAction()
+
+                    # Split multiline commands (escaped \n)
+                    for cmd in line.split("\\n"):
+                        cmd = cmd.strip()
+                        if not cmd:
+                            continue
+
+                        # pyautogui.click(x=..., y=...)
+                        match = re.match(r"(pyautogui|mobile)\.(\w+)\((.*?)\)", cmd)
+                        if match:
+                            method_type, method_name, args = match.groups()
+
+                            # mobile.swipe(from_coord=[x1, y1], to_coord=[x2, y2])
+                            if method_name == "swipe":
+                                coord_match = re.findall(r"from_coord=\[([0-9.]+),\s*([0-9.]+)\],\s*to_coord=\[([0-9.]+),\s*([0-9.]+)\]", args)
+                                if coord_match:
+                                    x1, y1, x2, y2 = map(float, coord_match[0])
+                                    x1_abs, y1_abs = int(x1 * width), int(y1 * height)
+                                    x2_abs, y2_abs = int(x2 * width), int(y2 * height)
+                                    cmd = f"{method_type}.swipe(from_coord=[{x1_abs}, {y1_abs}], to_coord=[{x2_abs}, {y2_abs}])"
+                            else:
+                                # x=..., y=... conversion
+                                xy_match = re.findall(r"x=([0-9.]+),\s*y=([0-9.]+)", args)
+                                if xy_match:
+                                    for x, y in xy_match:
+                                        abs_x = int(round(float(x) * width))
+                                        abs_y = int(round(float(y) * height))
+                                        cmd = f"{method_type}.{method_name}(x={abs_x}, y={abs_y})"
+
+                        actions.append(UIAction(pyautogui=cmd))
+
+            # If current_action has content, append it (after low-level actions)
+            if current_action != UIAction():
+                actions.insert(0, current_action)
+                current_action = UIAction()
+
+            if gpt_entry.get("end_turn", False):
+                i += 1
+                break
+            i += 1
+
+        gpt = UIConversationOutput(from_="gpt", actions=actions)
+        conversation_pairs.append([human, gpt])
 
     summary["parsed_successfully"] += 1
     per_dataset_summary[dataset_name]["parsed"] += 1
 
     return InteractionStep(
-        image_path=f"{dataset_name}/{item['image']}",
+        image_path=f"{dataset_name}/{image_field}",
         image_width=width,
         image_height=height,
         all_ui_elements=None,
         conversation_list=conversation_pairs,
     )
+
+
+
 
 def parse_all_datasets(config_yaml):
     with open(config_yaml, "r") as f:
@@ -233,7 +424,7 @@ def parse_all_datasets(config_yaml):
     #     )
 
     # Optional: Save to disk
-    with open("logs/aguvis_stage1/final_summary.json", "w") as f:
+    with open("logs/aguvis_stage2/final_summary.json", "w") as f:
         json.dump(summary["datasets"], f, indent=2)
 
     return all_steps, config["datasets"]
@@ -280,7 +471,7 @@ def generate_grouped_output(domain_to_steps, output_path):
             )
 
         traj = Trajectory(
-            data_source="os-atlas",
+            data_source="aguvis_stage2",
             is_navigation=False,
             domain=domain,
             steps=merged_steps
@@ -333,21 +524,21 @@ def main():
     # Save per-domain trajectories
     for domain, steps in domain_to_steps.items():
         traj = Trajectory(
-            data_source="aguvis-stage1",
-            is_navigation=False,
+            data_source="aguvis_stage2",
+            is_navigation=True,
             domain=domain,
             steps=steps
         )
         all_trajectories.append(traj.model_dump(exclude_none=True))
 
-        output_path = f"{OUTPUT_PATH}/aguvis1_parsed_{domain}.json"
+        output_path = f"{OUTPUT_PATH}/aguvis2_parsed_{domain}.json"
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "w") as f:
             f.write(traj.model_dump_json(indent=2, exclude_none=True))
         print(f"Saved trajectory for domain '{domain}' to {output_path}")
 
     # Save unified trajectory file (list of trajectories)
-    unified_path = f"{OUTPUT_PATH}/aguvis1_parsed_unified.json"
+    unified_path = f"{OUTPUT_PATH}/aguvis2_parsed_unified.json"
     with open(unified_path, "w") as f:
         json.dump(all_trajectories, f, indent=2)
     print(f"📦 Saved unified trajectory list to {unified_path}")
@@ -386,7 +577,7 @@ def main():
             normalized_failure_reasons[dataset][key] += count
 
     # Save failure summary
-    with open("logs/aguvis_stage1/failure_summary_log.json", "w") as f:
+    with open("logs/aguvis_stage2/failure_summary_log.json", "w") as f:
         json.dump(normalized_failure_reasons, f, indent=2)
 
     print("OS Atlas parsing complete.")
@@ -418,5 +609,5 @@ for dataset, reason_counts in failure_reasons_counter.items():
 
 # Step 3: Save the cleaned summary
 os.makedirs("logs", exist_ok=True)
-with open("logs/aguvis_stage1/failure_summary_log.json", "w") as f:
+with open("logs/aguvis_stage2/failure_summary_log.json", "w") as f:
     json.dump(normalized_failure_reasons, f, indent=2)

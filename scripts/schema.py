@@ -136,6 +136,10 @@ class UIAction(BaseModel):
 class UIConversationInput(BaseModel):
     from_: Annotated[Literal['human'], Field(alias='from')]
     value: str
+    
+    model_config = {
+        "populate_by_name": True
+    }
 
     @model_validator(mode='after')
     def validate_data(self) -> 'UIConversationInput':
@@ -160,6 +164,10 @@ class UIConversationOutput(BaseModel):
         for action in self.actions:
             action.set_stage(stage)
         return self
+    
+    model_config = {
+        "populate_by_name": True
+    }
 
     @model_validator(mode='after')
     def validate_data(self) -> 'UIConversationOutput':
